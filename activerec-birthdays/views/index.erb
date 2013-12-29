@@ -1,0 +1,10 @@
+<h1>Birthday Tracker</h1>
+<ul>
+<% @birthdays.each do |entry| %>
+  <li>
+    <h2><a href="/<%= entry.id %>"><%= entry.name %></a>
+    <span><%= entry.date %></span>
+    </h2>
+  </li>
+<% end %>
+</ul> 
